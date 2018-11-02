@@ -18,6 +18,13 @@ var circumference = require('./circumference');
 console.log("== circumference(5):", circumference(5));
 console.log("== circumference(8):", circumference(8));
 
-var circle = require('./circle');
+var circle = require('./lib/circle');
 console.log("== circle.circumference(5):", circle.circumference(5));
 console.log("== circle.area(5):", circle.area(5));
+
+var figlet = require('figlet');
+figlet('CS 290!', function (err, data) {
+  if (data) {
+    console.log(data);
+  }
+});
