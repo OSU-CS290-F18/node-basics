@@ -1,10 +1,12 @@
 var fs = require('fs');
 
+var data = null;
 fs.readFile('test.js', 'utf-8', function (err, contents) {
   if (err) {
     throw err;
   }
   console.log(contents);
+  data = contents;
 });
 
 console.log("======= This comes after readFile()");
