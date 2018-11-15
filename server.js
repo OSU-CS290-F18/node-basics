@@ -19,7 +19,12 @@ function requestHandler(req, res) {
 
   res.end();
 
-  res.write("</html>");
+  /*
+   * If you uncomment the line below, it will give you an error because you
+   * can't do anything else with the response after you send it by calling
+   * res.end().
+   */
+  // res.write("</html>");
 
 }
 
